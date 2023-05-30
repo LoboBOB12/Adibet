@@ -1,6 +1,7 @@
 package app.lobo.adibet
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.graphics.*
 import android.os.Bundle
 import android.os.Handler
@@ -164,7 +165,8 @@ class GameActivity : Activity() {
 
     private fun gameOver() {
         stopGame()
-       finish()
+        val intent = Intent(this, finnish::class.java)
+        startActivity(intent)
     }
 
     inner class GameView(context: Context) : SurfaceView(context), SurfaceHolder.Callback {

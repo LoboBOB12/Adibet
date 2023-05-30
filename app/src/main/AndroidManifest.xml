@@ -19,6 +19,10 @@
         <activity
             android:name=".policy"
             android:exported="false" />
+
+        <activity
+            android:name=".finnish"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
